@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url(~bootstrap/scss/bootstrap);
+      :root {
+        --bs-body-bg: #d3cbb1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Weather App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Click Here
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Weather Website Developed By Luv Sharma</a></li>
+                <li style="display: flex;"><a class="dropdown-item" href="#" style="width: 27%;">Connect with Luv Sharma: <a href="https://tinyurl.com/22ra6db9" target="_blank"><svg style="width: 20px; height:20px; margin-top:6px; margin-right:6px; margin-left:6px;" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="m116 3h-104a8.91 8.91 0 0 0 -9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81v-104.42a8.93 8.93 0 0 0 -9-8.77z" fill="#0076b2"/><g fill="#fff"><path d="m21.06 48.73h18.11v58.27h-18.11zm9.06-29a10.5 10.5 0 1 1 -10.5 10.49 10.5 10.5 0 0 1 10.5-10.49"/><path d="m50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41 18.34-.04 21.74 12.03 21.74 27.68v32h-18.11v-28.35c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15v28.79h-18.08z"/></g></svg></a>
+                <a href="tel:+917982299553"><svg style="width: 20px; height:20px; margin-top:6px; margin-left:6px; margin-right:6px;" enable-background="new 0 0 52 52" height="52" viewBox="0 0 52 52" width="52" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m48.5 37.9-6.1-4.9c-1.4-1.1-3.4-1.2-4.8-.1l-5.2 3.8c-.6.5-1.5.4-2.1-.2l-7.8-7-7-7.8c-.6-.6-.6-1.4-.2-2.1l3.8-5.2c1.1-1.4 1-3.4-.1-4.8l-4.9-6.1c-1.5-1.8-4.2-2-5.9-.3l-5.2 5.2c-.8.8-1.2 1.9-1.2 3 .5 10.2 5.1 19.9 11.9 26.7s16.5 11.4 26.7 11.9c1.1.1 2.2-.4 3-1.2l5.2-5.2c1.9-1.5 1.8-4.3-.1-5.7z"/><path d="m48.4 2h-15.4c-1 0-1.3 1.1-.5 1.9l4.9 5-9 9.1c-.5.5-.5 1.4 0 1.9l3.7 3.7c.5.5 1.3.5 1.9 0l9.1-9.1 5.1 4.9c.7.9 1.8.6 1.8-.4v-15.3c0-.7-.9-1.7-1.6-1.7z"/></g></svg></a>
+
+                <a href="mailto:luvsharma.del@gmail.com"><svg style="width: 40px; height:35px; " viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m76.0526316 26.315789h-52.1052632c-1.9789632.0259973-3.5658229 1.6445942-3.5526316 3.6236842v2.5578947c-.0089171.2726689.1074207.5344291.3157895.7105264l26.2736842 21.5289473c1.6527869 1.5992439 4.2761605 1.5992439 5.9289474 0l26.2736842-21.5526316c.2083688-.1760972.3247067-.4378574.3157895-.7105263v-2.5026315c.0444241-1.9573752-1.4933246-3.5866148-3.45-3.6552632zm-55.6342105 11.6131579c-.0016745-.3374393.1922761-.6452975.4973684-.7894737.3136394-.1756333.7063278-.1172169.9552631.1421053l12.75 11.2973684c.1891937.1572354.2942789.3936773.2842106.6394737.0099536.2471821-.0779888.4883147-.2447369.6710526l-12.75 12.0394737c-.2306499.2836754-.6258984.3718713-.9552631.2131579-.3409123-.1413764-.5537135-.4843992-.5289474-.8526316v-23.3605263zm0 29.2105263c.0040257-.2520989.1059478-.4927482.2842105-.6710526l16.05-14.9763158c.325012-.3168983.843409-.3168983 1.168421 0l6.781579 6.0394737c2.9633728 2.7872427 7.5839955 2.7872427 10.5473684 0l6.7815789-6.0394737c.3312484-.3011794.8371728-.3011794 1.1684211 0l16.0578947 14.9447368c.1842936.1741782.2873447.4174934.2842106.6710527v2.9131579c.0147694.9569058-.3512535 1.880475-1.0175251 2.5674751-.6662716.687-1.5781972 1.0811378-2.5351065 1.0956828h-52.0421053c-1.9895587-.0303037-3.5789865-1.6656483-3.5526316-3.6552632v-2.9131579zm59.1552631-5.8578947c.0110161.3646735-.1973312.7005169-.5289474.8526316-.3319504.1322406-.7110189.0476551-.9552631-.2131579l-12.75-12.0631579c-.1667481-.182738-.2546905-.4238706-.2447369-.6710527-.0025034-.2512669.1147566-.4887185.3157895-.6394737l12.75-11.3289473c.2530084-.2310116.6261369-.2724703.9236842-.1026316.3122005.1410397.5172561.4470928.5289474.7894737v23.3526316z" fill="#fff" fill-rule="evenodd"/></svg></a></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" >To Access the Weather of different places use the search bar </a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="search_val"
+              placeholder="Enter Place"
+              aria-label="Search"
+              style="background-color: rgb(69, 67, 67)"
+              value=""
+            />
+
+            <button class="btn btn-outline-light" id="search_btn">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <center>
+      <h1 class="head my-5">
+        <span id="city"></span>
+      </h1>
+    </center>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mx-3">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Temperature</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span id="temp1"></span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Temp is <span id="temp"></span></li>
+
+              <li>Min Temp: <span id="min_temp"></span></li>
+              <li>Max Temp: <span id="max_temp"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Humidity</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span id="humidity1"></span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Humidity is <span id="humidity"></span>%</li>
+              <li>Feels like: <span id="feels_like"></span></li>
+              <li>Wind Degrees: <span id="wind_degrees"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Wind/Sun</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span id="wind_speed1"></span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Wind Speed is <span id="wind_speed"></span> km/hr</li>
+              <li>Sunrise: <span id="sunrise"></span></li>
+              <li>Sunset: <span id="sunset"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <h3><i>Weather of Other Common places</i></h3>
+    </center>
+
+    <div class="table-responsive mx-5 my-3">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 15%"></th>
+            <th style="width: 22%">Temp</th>
+            <th style="width: 22%">Feels Like</th>
+            <th style="width: 22%">Humidity</th>
+            <th style="width: 22%">Wind Speed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start" id="city" value="Mandi">
+              Mandi
+            </th>
+            <td id="tempM"></td>
+            <td id="feels_likeM"></td>
+            <td id="humidityM"></td>
+            <td id="wind_speedM"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start" id="city" value="Bombay">
+              Mumbai
+            </th>
+            <td id="tempB"></td>
+            <td id="feels_likeB"></td>
+            <td id="humidityB"></td>
+            <td id="wind_speedB"></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start" id="city" value="London">
+              London
+            </th>
+            <td id="tempL"></td>
+            <td id="feels_likeL"></td>
+            <td id="humidityL"></td>
+            <td id="wind_speedL"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start" id="city" value="Paris">
+              Paris
+            </th>
+            <td id="tempP"></td>
+            <td id="feels_likeP"></td>
+            <td id="humidityP"></td>
+            <td id="wind_speedP"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      const options = {
+        method: "GET",
+        headers: {
+          "X-RapidAPI-Key":
+            "80c750ac17mshb567771a15d46e0p159832jsn48347c3a3b68",
+          "X-RapidAPI-Host": "weather-by-api-ninjas.p.rapidapi.com",
+        },
+      };
+      const weather = (city_val) => {
+        const city = document.getElementById("city");
+        setTimeout(
+          () =>
+            (city.innerHTML = city_val[0].toUpperCase() + city_val.slice(1)+" Weather"),
+          1000
+        );
+        fetch(
+          "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" +
+            city_val,
+          options
+        )
+          .then((response) => response.json())
+          .then((response) => {
+            console.log(response);
+            temp.innerHTML = response.temp + "°C";
+            temp1.innerHTML = response.temp + "°C";
+            feels_like.innerHTML = response.feels_like + "°C";
+            humidity.innerHTML = response.humidity;
+            humidity1.innerHTML = response.humidity;
+            min_temp.innerHTML = response.min_temp + "°C";
+            max_temp.innerHTML = response.max_temp + "°C";
+            wind_speed.innerHTML = response.wind_speed;
+            wind_speed1.innerHTML = response.wind_speed;
+            wind_degrees.innerHTML = response.wind_degrees;
+            sunrise.innerHTML = response.sunrise;
+            sunset.innerHTML = response.sunset;
+          });
+      };
+      const weather2 = () => {
+        let cities = {
+          'Mandi': [tempM, feels_likeM, humidityM, wind_speedM],
+          'Bombay': [tempB, feels_likeB, humidityB, wind_speedB],
+          'London': [tempL, feels_likeL, humidityL, wind_speedL],
+          'Paris': [tempP, feels_likeP, humidityP, wind_speedP],
+        };
+        for (let i = 0; i < 4; i++) {
+          fetch(
+            "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" +
+              Object.keys(cities)[i],
+            options
+          )
+            .then((response) => response.json())
+            .then((response) => {
+              cities[Object.keys(cities)[i]][0].innerHTML = response.temp + "°C";
+              cities[Object.keys(cities)[i]][1].innerHTML = response.feels_like + "°C";
+              cities[Object.keys(cities)[i]][2].innerHTML = response.humidity+"%";
+              cities[Object.keys(cities)[i]][3].innerHTML = response.wind_speed+"km/hr";
+            });
+        }
+      };
+      weather2()
+
+      let search_btn = document.getElementById("search_btn");
+      const x = document.getElementById("search_val");
+      let Search_value = x.value;
+      weather("Delhi")
+      x.oninput = () => {
+        Search_value = x.value;
+      };
+      search_btn.onclick = () => {
+        weather(Search_value);
+      };
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
